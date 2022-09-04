@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinaw Singh</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/a688f7b375.js" crossorigin="anonymous"></script>
+</head>
+<body>
+      <div id="header">
+<div class="container">
+    <nav>
+        <img src="images/yes.jpg" class="logo">
+                 <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#">Contact</a></li>
+                 </ul>
+          </nav>
+          <div class="header-text">
+            <p>Website and App Developer</p>
+            <h1>Hi!, I'm <span>Abhinaw Singh</span><br> from India</h1>
+          </div>
+    </div>
+</div>
+<!------------About Section------------>
+<div id="About">
+    <div class="Container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="Sub-title">About Me</h1>
+                <h3><p>Hi!, Myself Abhinaw Singh and I am a student of Army Public School Jalandhar Cantt. This is my first website i have made. I know HTML and Some basic CSS. With the help of these two language i have made this website.<br>
+                Please do not forget to send your feedback. You can send your feedback with the help of comment section at the last of this website.</p></h3>
+
+                  <div class="tab-titles">
+                      <p class="tab-links active-link" oneclick="opentab('Skills')">Skills</p>
+                      <p class="tab-links" oneclick="opentab('Experience')">Experience</p>
+                      <p class="tab-links" oneclick="opentab('Education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>HTML/CSS</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Website Development</li>
+                        <li><span>App Development</span><br>Building Android apps</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Learn CSS</li>
+                        <li><span>2019 - 2021</span><br>Learn HTML</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2021</span><br>Learn CSS from Youtube</li>
+                        <li><span>2019</span><br>learn HTML from Youtube</li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------Services----------->
+<div id="services">
+    <div class="container">
+        <h1 class="Sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designing</h2>
+                <p>I make website with the help of Html, CSS and Java.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Designing</h2>
+                <p>I make apps with the help of Python.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<Script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link")
+     }
+
+</Script>
+
+</body>
+</html>
